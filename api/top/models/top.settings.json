@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tops",
+  "info": {
+    "name": "top"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "startDate": {
+      "type": "date",
+      "unique": true,
+      "required": true
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "participants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "participant.participants"
+    }
+  }
+}

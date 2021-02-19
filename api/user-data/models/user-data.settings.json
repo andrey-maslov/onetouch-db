@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_data",
+  "info": {
+    "name": "userData"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "isPublic": {
+      "type": "boolean",
+      "default": true
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "encdata": {
+      "type": "string"
+    },
+    "vkId": {
+      "type": "string"
+    },
+    "instagramId": {
+      "type": "string"
+    },
+    "facebookId": {
+      "type": "string"
+    },
+    "vkFriendsCount": {
+      "type": "integer"
+    },
+    "instagramFriendsCount": {
+      "type": "integer"
+    },
+    "facebookFriendsCount": {
+      "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

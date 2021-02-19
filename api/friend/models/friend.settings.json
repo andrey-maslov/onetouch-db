@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "friends",
+  "info": {
+    "name": "friend"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "encdata": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "friends"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_participant_participants",
+  "info": {
+    "name": "participants",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "index": {
+      "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
