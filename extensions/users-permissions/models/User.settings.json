@@ -62,6 +62,10 @@
     "friends": {
       "via": "user",
       "collection": "friend"
+    },
+    "userData": {
+      "via": "user",
+      "model": "user-data"
     }
   }
 }
